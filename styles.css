@@ -52,7 +52,7 @@ h1 {
   transition: all 0.2s 0.1s ease;
 }
 
-.card::before {
+.card:nth-child(-n+3):before{
   content: "";
   position: absolute;
   left: -15rem;
