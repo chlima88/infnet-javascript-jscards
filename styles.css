@@ -65,19 +65,23 @@ h1 {
 
 .card:hover {
   background-color: rgb(26, 26, 26) !important;
-  /* box-shadow: 0px 0px 5px 0px rgb(243, 243, 243); */
+  border-color: rgb(59, 169, 202);
+  box-shadow: 0px 0px 15px 0px rgb(59, 169, 202);
   transition: 0.2s 0.1s ease;
   
 }
 
 .card:hover:nth-child(1) {
   box-shadow: 0px 0px 15px 0px var(--first-color);
+  border-color: var(--first-color);
 }
 .card:hover:nth-child(2) {
   box-shadow: 0px 0px 15px 0px var(--second-color);
+  border-color: var(--second-color);
 }
 .card:hover:nth-child(3) {
   box-shadow: 0px 0px 15px 0px var(--third-color);
+  border-color: var(--third-color);
 }
 
 .card:hover .cardFront,
@@ -88,6 +92,7 @@ h1 {
 
 .card:hover::before {
   left: 23rem;
+  transition: none;
 }
 
 
